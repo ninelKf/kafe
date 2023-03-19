@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@700&display=swap");
+body {
+  font-family: "Comfortaa";
+  background: linear-gradient(180deg, #ffffcd 0%, #ffcbcb 100%);
+  width: 100%;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  margin: 50px;
+  font-size: 30px;
+}
+.scroll{
+  text-decoration: none;
+  color: #000000;
+}
+li:hover {
+  color: red;
+}
+.logo {
+  width: 121px;
+  height: 126px;
+
+  margin-left: -50px;
+}
+.logo:hover {
+  animation: pulse 1s 3;
+}
+main {
+  background-image: url(/image/main.jpg);
+  width: auto;
+  height: 800px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 50px;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+}
+input {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  width: 358px;
+  height: 93px;
+  background: #ffd400;
+  border: 5px solid #000000;
+  border-radius: 18px;
+  text-align: center;
+}
+h2 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+.menu-foto {
+  width: 450px;
+  height: 450px;
+}
+.menu {
+  margin: 50px;
+  padding: 10px;
+}
+.koto-menu {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 200px;
+  
+}
+.menu-foto:hover{
+  animation: anim1 1s 1;
+}
+@keyframes anim1 {
+  0%{
+      transform:scale(1);
+  }
+  100%{
+      transform:scale(1.5);
+      
+  }
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  height: 233px;
+  background: #000000;
+  display: flex;
+  justify-content: flex-start;
+}
+.logo-f {
+  width: 69px;
+  height: 72px;
+  margin: 10px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #ffd400;
+}
+.foto-sotseti {
+  height: 69px;
+  left: 749px;
+  margin: 10px;
+}
+.contact {
+  margin-left: 100px;
+}
+p {
+  font-size: 36px;
+  font-family: caveat;
+}
+
+
+/* адаптивность */
+@media (max-width: 1099px) {
+  li {
+    font-size: 24px;
+    margin: 10px;
+  }
+  ul {
+    align-items: center;
+  }
+  header {
+    justify-content: flex-start;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  main {
+    align-items: center;
+    font-size: 24px;
+    color: white;
+  }
+  .menu {
+    width: 50%;
+  }
+  
+ 
+}
+@media (max-width: 450px) {
+  ul {
+    flex-direction: column;
+  }
+  main {
+    padding: 50px;
+  }
+}
+
+/* карусель */
+.bx-wrapper {
+  width: 750px;
+  height: 550px;
+  margin: auto;
+}
+.slider img{
+  width: 750px;
+  height: 550px;
+}
+.galery{
+  margin: 100px;
+}
+
